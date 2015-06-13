@@ -10,6 +10,10 @@ attribute :casked,
 attribute :options,
   :kind_of        => String
 
+attribute :use_homebrew_owner,
+  :kind_of        => [TrueClass, FalseClass],
+  :default        => true
+
 if defined?(:default_action)
   default_action :install
 else
